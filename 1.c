@@ -9,10 +9,8 @@ int main()
 
     for (int i = 0; i < rows; i++)
     {
-        for (int j = 0; j < i + 1; j++)
-        {
-            printf("%d", j);
-        }
+        for (int j = 0; j <= i; j++)
+            printf("%c", 'A' + j);
         printf("\n");
     }
 

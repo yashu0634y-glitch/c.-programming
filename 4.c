@@ -7,17 +7,12 @@ int main()
     printf("Enter the rows : ");
     scanf("%d", &rows);
 
-    for (int i = 1; i <= rows; i++)
+    for (int i = 0; i < rows; i++)
     {
-        for (int s = 1; s <= rows - i; s++)
+        for (int s = 0; s < rows - i - 1; s++)
             printf(" ");
-
-        for (int j = 1; j <= i; j++)
-            printf("%d", j);
-
-        for (int j = i - 1; j >= 1; j--)
-            printf("%d", j);
-
+        for (int j = 0; j <= i; j++)
+            printf("%c", 'A' + j);
         printf("\n");
     }
 
